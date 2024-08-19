@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 600px; margin: 0 auto; }
+        .button { margin: 5px; padding: 10px; cursor: pointer; }
+        #progress-bar { width: 100%; background: #ddd; height: 20px; margin: 10px 0; }
+        #progress-bar div { height: 100%; background: #4caf50; width: 0%; }
+        .status { margin: 10px 0; }
+        .file-status { margin: 5px 0; }
+        .file-status span { display: inline-block; width: 200px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="file" id="fileInput" multiple />
+        <select id="formatSelect">
+            <option value="pdfToDocx">PDF to DOCX</option>
+            <option value="imageResize">Image Resize</option>
+        </select>
+        <button id="startButton" class="button">Start Conversion</button>
+        <button id="cancelButton" class="button">Cancel All</button>
+        <div id="progress-bar"><div></div></div>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
