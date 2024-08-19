@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Optimization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #graphCanvas {
+            border: 1px solid black;
+            margin: 20px 0;
+        }
+        #inputPanel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #pathDisplay {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Route Optimization for Delivery Service</h1>
+
+<canvas id="graphCanvas" width="800" height="500"></canvas>
+
+<div id="pathDisplay">Shortest Path will be displayed here</div>
+
+<div id="inputPanel">
+    <label for="startCity">Start City:</label>
+    <select id="startCity">
+        <option value="Buspark">Buspark</option>
+        <option value="Baneswor">Baneswor</option>
+        <option value="Chabahill">Chabahill</option>
+        <option value="Ratnapark">Ratnapark</option>
+        <option value="Lokanthali">Lokanthali</option>
+        <option value="Patan">Patan</option>
+    </select>
+
+    <label for="endCity">End City:</label>
+    <select id="endCity">
+        <option value="Buspark">Buspark</option>
+        <option value="Baneswor">Baneswor</option>
+        <option value="Chabahill">Chabahill</option>
+        <option value="Ratnapark">Ratnapark</option>
+        <option value="Lokanthali">Lokanthali</option>
+        <option value="Patan">Patan</option>
+    </select>
+
+    <button id="optimizeBtn">Optimize Route</button>
+</div>
+
+<script src="route.js"></script>
+</body>
+</html>
